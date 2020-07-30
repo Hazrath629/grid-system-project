@@ -1,0 +1,57 @@
+{% extends 'accounts/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% block title %}
+    <meta charset="UTF-8">
+    <title>dashboard</title>
+{% endblock %}
+</head>
+<body>
+{% block content %}
+{% include 'accounts/status.html' %}
+<div class="container-fluid">
+<div class="row">
+    <div class="col-md-5">
+        <div class="card">
+            <div class="card-header text-center bg-primary">
+                <h4>Customer details</h4>
+
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered text-center">
+                    <thead>
+                    <tr>
+                        <th>NAME</th>
+                        <th>CONTACT</th>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
+      <div class="col-md-7">
+          <div class="card">
+              <div class="card-header text-center bg-dark">
+                  <h4>ORDER DETAILS</h4>
+              </div>
+              <div class="card-body">
+                  <table class="table table-bordered text-center">
+                      <thead>
+                      <tr>
+                          <th>PRODUCT NAME</th>
+                          <th>CUSTOMER NAME</th>
+                          <th>PRICE</th>
+                          <th>ORDER DATE</th>
+                          <th>STATUS</th>
+                      </tr>
+                      </thead>
+                  </table>
+              </div>
+          </div>
+</div>
+</div>
+{% endblock %}
+</body>
+</html>
